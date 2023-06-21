@@ -54,6 +54,42 @@ api_routes:
   - GET /blogs/blog/views - Get views of a specific blog
   - POST /blogs/blog/views - Update views of a specific blog
 
+### Interacting with the API
+
+To interact with the API and test the endpoints, you can use Postman, a popular API development and testing tool. Follow the steps below to get started:
+
+1. Download and install Postman from the official website: [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
+
+2. Launch Postman and create a new request by clicking on the "New" button.
+
+3. Select the HTTP method (e.g., GET, POST, DELETE) for the desired API endpoint.
+
+4. Enter the URL of the live site where the API is hosted. `https://retink-bloggingapp.55nights.repl.co/`.
+
+5. If the endpoint requires any parameters or a request body, provide them in the appropriate sections of the Postman interface.
+
+6. Click the "Send" button to send the request to the API and view the response.
+
+7. Review the response in the "Response" section of Postman to see the data returned by the API.
+
+Please note that the API endpoints you can interact with are as follows:
+
+- **GET /blogs** - Get all blogs
+- **POST /blogs/create** - Create a new blog
+- **GET /blogs/blog/comments** - Get comments of a specific blog
+- **POST /blogs/blog/comments** - Post a comment for a specific blog
+- **GET /blogs/blog/likes** - Get likes of a specific blog
+- **POST /blogs/blog/likes** - Like a specific blog
+- **GET /blogs/blog/views** - Get views of a specific blog
+- **POST /blogs/blog/views** - Update views of a specific blog
+- **DELETE /blogs/:id/delete** - Delete a specific blog
+
+Feel free to explore and test these endpoints using Postman to interact with the API.
+
+If you have any questions or encounter any issues, please let us know.
+
+Happy testing!
+
 
 validation: The application uses validation middleware to validate the request data. Validation rules can be found in the `validate.js` file.
 
