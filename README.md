@@ -53,7 +53,7 @@ api_routes:
   - POST /blogs/blog/likes - Like a specific blog
   - GET /blogs/blog/views - Get views of a specific blog
   - POST /blogs/blog/views - Update views of a specific blog
-  - DELETE /blogs/:id/delete - Delete a specific blog
+
 
 validation: The application uses validation middleware to validate the request data. Validation rules can be found in the `validate.js` file.
 

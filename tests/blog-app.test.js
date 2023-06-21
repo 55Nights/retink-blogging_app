@@ -51,7 +51,7 @@ describe("Blog API", () => {
   // ... Add more tests for other API endpoints
 
   // Test DELETE /blogs/:id/delete
-  describe("DELETE /blogs/:id/delete", () => {
+  describe("DELETE /blogs/delete", () => {
     it("should delete a specific blog", async () => {
       const response = await request(app).delete("/blogs/1/delete");
       expect(response.status).toBe(200);
