@@ -10,17 +10,6 @@ app.use(express.json());
 //database
 
 db.connect();
-
-try {
-  const auth = {
-    fullname: "Ju we",
-    email: "jj@gmail.com",
-  };
-  db.addAuthour(auth);
-} catch (error) {
-
-  console.error(error);
-}
 app.use("/blogs", blogs);
 app.get("/", (req, res) => {
   res.send({ message: "hello" });
