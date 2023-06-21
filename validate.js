@@ -31,8 +31,10 @@ const createAuthorValidationRules = [
   body("fullname")
     .notEmpty()
     .withMessage("Full name is required")
-    .isAlpha()
-    .withMessage("Full name can only contain alphabets and spaces"),
+    .isString()
+    .withMessage("Author must be a string")
+    .matches(onlyLettersAndWhiteSpaceRegex)
+    .withMessage("Title can only contain letters (a-zA-Z)"),
 
   body("email")
     .notEmpty()
@@ -55,3 +57,4 @@ module.exports = {
   createAuthorValidationRules,
   validate,
 };
+
